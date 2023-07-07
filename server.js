@@ -10,10 +10,8 @@ app.use(bodyParser.json({ limit: "500000000mb" }));
 app.use(bodyParser.urlencoded({ limit: "500000000mb", extended: true }));
 
 app.use(express.json());
+// Enable CORS for all routes
 app.use(cors());
-app.use(helmet());
-app.set("trust proxy", 1);
-app.use(express.static("public"));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
