@@ -3,24 +3,24 @@ const Schema = mongoose.Schema;
 
 const EventSchemaFun = new Schema({
   bannerimage: {
-    type: String,
-    required: true,
+    type: Array,
+    // required: true,
   },
   title: {
     type: String,
-    required: true,
+    // required: true,
   },
   series: {
     type: String,
-    required: true,
+    // required: true,
   },
   date: {
     type: String,
-    required: true,
+    // required: true,
   },
   details: {
     type: String,
-    required: true,
+    // required: true,
   },
   createdAt: {
     type: Date,
